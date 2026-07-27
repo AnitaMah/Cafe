@@ -408,7 +408,7 @@ img, .placeholder { display: block; width: 100%; }
 }
 
 @media (max-width: 480px) {
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 0.35rem; }
   .hero-content { padding: var(--space-md); }
   .hero { height: 56vh; min-height: 380px; }
 }

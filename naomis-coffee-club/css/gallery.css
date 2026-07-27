@@ -12,7 +12,7 @@
   gap: 0.35rem;
   margin: var(--space-md) 0;
 }
-.gallery-item { aspect-ratio: 1/1; }
+.gallery-item { aspect-ratio: 1/1; cursor: pointer; }
 .ig-link {
   display: inline-block;
   margin-top: var(--space-sm);

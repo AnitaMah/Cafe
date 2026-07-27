@@ -1,0 +1,32 @@
+/* No open/close transitions by design — instant show/hide only */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(13, 11, 9, 0.95);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+.lightbox.open { display: flex; }
+
+.lightbox-image {
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: var(--space-xs);
+}
+.lightbox-close:hover { color: var(--accent); }

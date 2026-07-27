@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="css/visit.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
 
@@ -118,12 +119,12 @@
   <section class="gallery" id="gallery">
     <p class="eyebrow center">A look inside</p>
     <div class="gallery-grid">
-      <div class="gallery-item placeholder" data-label="gallery-1.jpg"></div>
-      <div class="gallery-item placeholder" data-label="gallery-2.jpg"></div>
-      <div class="gallery-item placeholder" data-label="gallery-3.jpg"></div>
-      <div class="gallery-item placeholder" data-label="gallery-4.jpg"></div>
-      <div class="gallery-item placeholder" data-label="gallery-5.jpg"></div>
-      <div class="gallery-item placeholder" data-label="gallery-6.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-1.jpg" tabindex="0" role="button" aria-label="Open gallery-1.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-2.jpg" tabindex="0" role="button" aria-label="Open gallery-2.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-3.jpg" tabindex="0" role="button" aria-label="Open gallery-3.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-4.jpg" tabindex="0" role="button" aria-label="Open gallery-4.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-5.jpg" tabindex="0" role="button" aria-label="Open gallery-5.jpg"></div>
+      <div class="gallery-item placeholder" data-label="gallery-6.jpg" tabindex="0" role="button" aria-label="Open gallery-6.jpg"></div>
     </div>
     <a href="https://instagram.com/naomis.coffeeclub" target="_blank" rel="noopener" class="ig-link">Follow @naomis.coffeeclub →</a>
   </section>
@@ -171,6 +172,11 @@
     <a href="https://instagram.com/naomis.coffeeclub" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <div class="lightbox-image placeholder" id="lightboxImage"></div>
+</div>
 
 <script src="script.js"></script>
 </body>

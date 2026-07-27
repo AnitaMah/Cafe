@@ -25,4 +25,5 @@
   font-size: var(--text-button);
 }
 .visit-note { font-size: var(--text-small); color: var(--tan); font-style: italic; }
-.visit-map { aspect-ratio: 1/1; }
+/* Landscape ratio reads as a map/location tile, not a photo square */
+.visit-map { aspect-ratio: 4/3; }

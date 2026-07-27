@@ -29,7 +29,9 @@
   color: var(--tan);
   margin-top: 0.15rem;
 }
-.nav-desktop { display: flex; gap: var(--space-md); }
+/* Mobile-first: desktop nav hidden, hamburger shown, until
+   responsive.css re-enables desktop nav at min-width */
+.nav-desktop { display: none; gap: var(--space-md); }
 .nav-desktop a {
   font-size: var(--text-small);
   letter-spacing: 0.03em;
@@ -38,7 +40,7 @@
 .nav-desktop a:hover { color: var(--accent); }
 
 .nav-toggle {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 5px;
   background: none;

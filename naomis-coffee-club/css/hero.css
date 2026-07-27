@@ -1,7 +1,9 @@
 .hero {
   position: relative;
-  height: 78vh;
-  min-height: 480px;
+  /* Mobile-first: shorter hero on small screens, taller from
+     responsive.css at min-width */
+  height: 56vh;
+  min-height: 380px;
   display: flex;
   align-items: flex-end;
 }
@@ -15,7 +17,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: var(--space-lg) var(--space-md);
+  padding: var(--space-md);
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;

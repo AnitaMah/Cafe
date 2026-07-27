@@ -1,22 +1,37 @@
-/* ===== Responsive ===== */
-@media (max-width: 860px) {
-  .nav-desktop { display: none; }
-  .nav-toggle { display: flex; }
+/* =====================================================================
+   Mobile-first responsive rules.
+   Every other CSS file defines the small-screen (mobile) layout by
+   default. This file is loaded last and progressively enhances the
+   layout for larger screens using min-width, so there is exactly one
+   breakpoint to reason about instead of several overlapping max-width
+   overrides.
+   ===================================================================== */
 
-  .about { grid-template-columns: 1fr; }
-  .menu-grid { grid-template-columns: 1fr; }
-  .events-grid { grid-template-columns: 1fr; }
-  .visit-inner { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 700px) {
+  /* Restore the larger spacing scale and heading size used on
+     tablet/desktop */
+  :root {
+    --space-lg: 4rem;
+    --space-xl: 7rem;
+  }
+  .section-title { font-size: var(--text-heading-lg); }
 
-  .section-title { font-size: var(--text-heading); }
-  :root { --space-xl: 4rem; --space-lg: 2.5rem; }
-}
+  /* Header: swap hamburger for full desktop nav */
+  .nav-desktop { display: flex; }
+  .nav-toggle { display: none; }
 
-@media (max-width: 480px) {
-  .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 0.35rem; }
-  .hero-content { padding: var(--space-md); }
-  .hero { height: 56vh; min-height: 380px; }
+  /* Hero: taller banner once there's room for it */
+  .hero { height: 78vh; min-height: 480px; }
+  .hero-content { padding: var(--space-lg) var(--space-md); }
+
+  /* Two-column sections */
+  .about { grid-template-columns: 1fr 1fr; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+  .events-grid { grid-template-columns: repeat(2, 1fr); }
+  .visit-inner { grid-template-columns: 1fr 1fr; }
+
+  /* Gallery gets a slightly more generous gap once columns are wider */
+  .gallery-grid { gap: var(--space-xs); }
 }
 
 @media (prefers-reduced-motion: reduce) {

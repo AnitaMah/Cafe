@@ -5,7 +5,8 @@
 }
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* Mobile-first: single column, becomes 2 columns at min-width */
+  grid-template-columns: 1fr;
   gap: var(--space-lg) var(--space-md);
   margin-top: var(--space-lg);
 }
@@ -27,7 +28,7 @@
   padding: 0.7rem 0;
   border-bottom: 1px dotted rgba(138, 111, 82, 0.2);
 }
-.item-name-group { display: flex; flex-direction: column; }
+.item-name-group { display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0; }
 .item-name { font-size: var(--text-body-sm); }
 .item-desc {
   display: block;

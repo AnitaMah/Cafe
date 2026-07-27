@@ -1,0 +1,27 @@
+.visit {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+.visit-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+.visit-address {
+  font-family: var(--font-display);
+  font-size: var(--text-subhead-lg);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+.visit-hours { margin-bottom: var(--space-md); }
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px dotted rgba(138, 111, 82, 0.25);
+  font-size: var(--text-button);
+}
+.visit-note { font-size: var(--text-small); color: var(--tan); font-style: italic; }
+.visit-map { aspect-ratio: 1/1; }

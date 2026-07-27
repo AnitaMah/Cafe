@@ -1,0 +1,33 @@
+/* ===== Design Tokens ===== */
+:root {
+  --bg: #0D0B09;
+  --cream: #EFE6D8;
+  --espresso: #3D2B1F;
+  --tan: #8A6F52;
+  --accent: #D97A3F;
+  --accent-hover: #c76a30;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Work Sans', sans-serif;
+
+  --max-width: 1140px;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 7rem;
+
+  /* Type scale — named tiers for every font-size used across the site */
+  --text-caption: 0.6rem;    /* logo subtext */
+  --text-label: 0.75rem;     /* eyebrows, placeholder labels */
+  --text-footnote: 0.8rem;   /* item description, footer address */
+  --text-small: 0.85rem;     /* desktop nav links, visit note */
+  --text-button: 0.9rem;     /* buttons, ig link, event desc, hours row */
+  --text-body-sm: 0.95rem;   /* menu item name, mobile nav links */
+  --text-body: 1.1rem;       /* about copy */
+  --text-subhead: 1.4rem;    /* logo, event title */
+  --text-subhead-lg: 1.5rem; /* visit address */
+  --text-heading-sm: 1.6rem; /* menu category heading */
+  --text-heading: 2rem;      /* section title, mobile */
+  --text-heading-lg: 2.5rem; /* section title, desktop */
+}

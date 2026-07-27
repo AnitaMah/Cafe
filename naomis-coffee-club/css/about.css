@@ -1,0 +1,16 @@
+.about {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+.about-image { aspect-ratio: 4/5; }
+.about-copy {
+  font-size: var(--text-body);
+  color: var(--cream);
+  opacity: 0.9;
+  max-width: 40ch;
+}

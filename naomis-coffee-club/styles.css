@@ -16,6 +16,20 @@
   --space-md: 2rem;
   --space-lg: 4rem;
   --space-xl: 7rem;
+
+  /* Type scale — named tiers for every font-size used across the site */
+  --text-caption: 0.6rem;    /* logo subtext */
+  --text-label: 0.75rem;     /* eyebrows, placeholder labels */
+  --text-footnote: 0.8rem;   /* item description, footer address */
+  --text-small: 0.85rem;     /* desktop nav links, visit note */
+  --text-button: 0.9rem;     /* buttons, ig link, event desc, hours row */
+  --text-body-sm: 0.95rem;   /* menu item name, mobile nav links */
+  --text-body: 1.1rem;       /* about copy */
+  --text-subhead: 1.4rem;    /* logo, event title */
+  --text-subhead-lg: 1.5rem; /* visit address */
+  --text-heading-sm: 1.6rem; /* menu category heading */
+  --text-heading: 2rem;      /* section title, mobile */
+  --text-heading-lg: 2.5rem; /* section title, desktop */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,7 +60,7 @@ img, .placeholder { display: block; width: 100%; }
 .placeholder::after {
   content: attr(data-label);
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: var(--text-label);
   color: var(--tan);
   text-align: center;
   padding: 0 1rem;
@@ -55,7 +69,7 @@ img, .placeholder { display: block; width: 100%; }
 
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: var(--text-label);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--accent);
@@ -67,7 +81,7 @@ img, .placeholder { display: block; width: 100%; }
 .section-title {
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: var(--text-heading-lg);
   margin-bottom: var(--space-md);
 }
 .section-title.center { text-align: center; }
@@ -78,13 +92,28 @@ img, .placeholder { display: block; width: 100%; }
   color: var(--bg);
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: var(--text-button);
   letter-spacing: 0.03em;
   padding: 0.9rem 2rem;
   border-radius: 2px;
   transition: background-color 0.2s ease;
 }
 .btn-primary:hover { background: var(--accent-hover); }
+
+.btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-button);
+  letter-spacing: 0.03em;
+  padding: 0.9rem 2rem;
+  border-radius: 2px;
+  border: 1px solid var(--tan);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ===== Header ===== */
 .site-header {
@@ -105,7 +134,7 @@ img, .placeholder { display: block; width: 100%; }
 }
 .logo {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: var(--text-subhead);
   letter-spacing: 0.08em;
   line-height: 1;
   display: flex;
@@ -113,14 +142,14 @@ img, .placeholder { display: block; width: 100%; }
 }
 .logo span {
   font-family: var(--font-body);
-  font-size: 0.6rem;
+  font-size: var(--text-caption);
   letter-spacing: 0.25em;
   color: var(--tan);
   margin-top: 0.15rem;
 }
 .nav-desktop { display: flex; gap: var(--space-md); }
 .nav-desktop a {
-  font-size: 0.85rem;
+  font-size: var(--text-small);
   letter-spacing: 0.03em;
   transition: color 0.2s ease;
 }
@@ -133,7 +162,7 @@ img, .placeholder { display: block; width: 100%; }
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: var(--space-xs);
 }
 .nav-toggle span {
   width: 22px;
@@ -149,7 +178,7 @@ img, .placeholder { display: block; width: 100%; }
 .nav-mobile a {
   padding: 0.75rem 0;
   border-bottom: 1px solid rgba(138, 111, 82, 0.2);
-  font-size: 0.95rem;
+  font-size: var(--text-body-sm);
 }
 .nav-mobile.open { display: flex; }
 
@@ -197,7 +226,7 @@ img, .placeholder { display: block; width: 100%; }
 }
 .about-image { aspect-ratio: 4/5; }
 .about-copy {
-  font-size: 1.1rem;
+  font-size: var(--text-body);
   color: var(--cream);
   opacity: 0.9;
   max-width: 40ch;
@@ -218,7 +247,7 @@ img, .placeholder { display: block; width: 100%; }
 .menu-category h3 {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: var(--text-heading-sm);
   color: var(--accent);
   margin-bottom: var(--space-sm);
   padding-bottom: var(--space-xs);
@@ -234,10 +263,10 @@ img, .placeholder { display: block; width: 100%; }
   border-bottom: 1px dotted rgba(138, 111, 82, 0.2);
 }
 .item-name-group { display: flex; flex-direction: column; }
-.item-name { font-size: 0.95rem; }
+.item-name { font-size: var(--text-body-sm); }
 .item-desc {
   display: block;
-  font-size: 0.8rem;
+  font-size: var(--text-footnote);
   color: var(--tan);
   margin-top: 0.15rem;
 }
@@ -265,7 +294,7 @@ img, .placeholder { display: block; width: 100%; }
 .ig-link {
   display: inline-block;
   margin-top: var(--space-sm);
-  font-size: 0.9rem;
+  font-size: var(--text-button);
   color: var(--accent);
   border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
@@ -292,7 +321,7 @@ img, .placeholder { display: block; width: 100%; }
   border-radius: 2px;
 }
 .event-date {
-  font-size: 0.75rem;
+  font-size: var(--text-label);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
@@ -300,10 +329,10 @@ img, .placeholder { display: block; width: 100%; }
 }
 .event-title {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: var(--text-subhead);
   margin-bottom: var(--space-xs);
 }
-.event-desc { font-size: 0.9rem; color: var(--tan); }
+.event-desc { font-size: var(--text-button); color: var(--tan); }
 
 /* ===== Visit ===== */
 .visit {
@@ -319,7 +348,7 @@ img, .placeholder { display: block; width: 100%; }
 }
 .visit-address {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: var(--text-subhead-lg);
   margin: var(--space-sm) 0 var(--space-md);
 }
 .visit-hours { margin-bottom: var(--space-md); }
@@ -327,11 +356,11 @@ img, .placeholder { display: block; width: 100%; }
   display: flex;
   justify-content: space-between;
   max-width: 320px;
-  padding: 0.5rem 0;
+  padding: var(--space-xs) 0;
   border-bottom: 1px dotted rgba(138, 111, 82, 0.25);
-  font-size: 0.9rem;
+  font-size: var(--text-button);
 }
-.visit-note { font-size: 0.85rem; color: var(--tan); font-style: italic; }
+.visit-note { font-size: var(--text-small); color: var(--tan); font-style: italic; }
 .visit-map { aspect-ratio: 1/1; }
 
 /* ===== Footer ===== */
@@ -346,17 +375,17 @@ img, .placeholder { display: block; width: 100%; }
 }
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: var(--text-body);
   letter-spacing: 0.1em;
   margin-bottom: var(--space-xs);
 }
 .footer-address {
-  font-size: 0.8rem;
+  font-size: var(--text-footnote);
   color: var(--tan);
   margin-bottom: var(--space-sm);
 }
 .site-footer a {
-  font-size: 0.85rem;
+  font-size: var(--text-small);
   color: var(--accent);
 }
 
@@ -371,7 +400,7 @@ img, .placeholder { display: block; width: 100%; }
   .visit-inner { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 
-  .section-title { font-size: 2rem; }
+  .section-title { font-size: var(--text-heading); }
   :root { --space-xl: 4rem; --space-lg: 2.5rem; }
 }
 

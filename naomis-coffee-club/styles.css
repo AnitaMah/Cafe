@@ -213,6 +213,7 @@ img, .placeholder { display: block; width: 100%; }
   line-height: 1.05;
   margin-bottom: var(--space-md);
 }
+.hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
 
 /* ===== About ===== */
 .about {

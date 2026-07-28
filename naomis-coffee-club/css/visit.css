@@ -26,4 +26,12 @@
 }
 .visit-note { font-size: var(--text-small); color: var(--tan); font-style: italic; }
 /* Landscape ratio reads as a map/location tile, not a photo square */
-.visit-map { aspect-ratio: 4/3; }
+.visit-map {
+  aspect-ratio: 4/3;
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(138, 111, 82, 0.4);
+  /* Standard trick to approximate a dark map without the Maps JS API:
+     invert the bright default embed, then correct the hue shift */
+  filter: invert(92%) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+}

@@ -20,9 +20,11 @@
   .nav-desktop { display: flex; }
   .nav-toggle { display: none; }
 
-  /* Hero: taller banner once there's room for it */
+  /* Hero: taller banner once there's room for it, buttons back to
+     left-aligned under the headline */
   .hero { height: 78vh; min-height: 480px; }
   .hero-content { padding: var(--space-lg) var(--space-md); }
+  .hero-actions { justify-content: flex-start; }
 
   /* Two-column sections */
   .about { grid-template-columns: 1fr 1fr; }

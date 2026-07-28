@@ -30,4 +30,6 @@
   line-height: 1.05;
   margin-bottom: var(--space-md);
 }
-.hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+/* Mobile-first: centered under the headline on small screens;
+   responsive.css moves it back to left-aligned on wider screens */
+.hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; justify-content: center; }

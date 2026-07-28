@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: var(--space-xl) var(--space-md);
 }
+/* "THE MENU" label is deliberately bigger than the "What we serve"
+   heading below it, per request — letter-spacing pulled in so it
+   doesn't look overly stretched at this size */
+.menu .eyebrow {
+  font-size: 3rem;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-sm);
+}
 .menu-grid {
   display: grid;
   /* Mobile-first: single column, becomes 2 columns at min-width */

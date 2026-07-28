@@ -35,12 +35,12 @@ class RootNav extends StatefulWidget {
 class _RootNavState extends State<RootNav> {
   int _selectedIndex = 0;
 
-  static const _screens = [
-    HomeScreen(),
-    MenuScreen(),
-    EventsScreen(),
-    LocationScreen(),
-    InfoScreen(),
+  late final List<Widget> _screens = [
+    HomeScreen(onNavigate: _onTap),
+    const MenuScreen(),
+    const EventsScreen(),
+    const LocationScreen(),
+    const InfoScreen(),
   ];
 
   static const _destinations = [

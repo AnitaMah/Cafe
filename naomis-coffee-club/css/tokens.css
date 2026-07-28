@@ -7,8 +7,10 @@
   --accent: #D97A3F;
   --accent-hover: #c76a30;
 
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Work Sans', sans-serif;
+  /* Whole site now uses EB Garamond — one serif family for headings
+     and body text instead of the previous serif/sans-serif pairing */
+  --font-display: 'EB Garamond', serif;
+  --font-body: 'EB Garamond', serif;
 
   --max-width: 1140px;
   --header-height: 76px;

@@ -1,9 +1,14 @@
 .hero {
   position: relative;
-  /* Mobile-first: shorter hero on small screens, taller from
-     responsive.css at min-width */
-  height: 56vh;
-  min-height: 380px;
+  /* Mobile-first: fill the rest of the first screen below the sticky
+     header, so the hero reads as "one screen" like the desktop
+     version instead of a short box with dead space after it.
+     100vh is a fallback for browsers without svh support — svh
+     (small viewport height) avoids the iOS Safari bug where 100vh
+     is measured behind the collapsing toolbar and leaves a gap. */
+  height: calc(100vh - var(--header-height));
+  height: calc(100svh - var(--header-height));
+  min-height: 420px;
   display: flex;
   align-items: flex-end;
 }

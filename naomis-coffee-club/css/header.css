@@ -10,6 +10,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1.1rem var(--space-md);
+  min-height: calc(var(--header-height) - 1px);
   display: flex;
   align-items: center;
   justify-content: space-between;

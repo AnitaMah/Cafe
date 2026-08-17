@@ -19,6 +19,8 @@
   margin-bottom: var(--space-sm);
 }
 .site-footer a {
+  display: inline-block;
   font-size: var(--text-small);
   color: var(--accent);
+  margin: 0 0.4rem;
 }

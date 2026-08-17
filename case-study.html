@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study — Naomi's Coffee Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="naomis-coffee-club/css/tokens.css">
+<link rel="stylesheet" href="naomis-coffee-club/css/base.css">
+<link rel="stylesheet" href="naomis-coffee-club/css/header.css">
+<link rel="stylesheet" href="naomis-coffee-club/css/footer.css">
+<link rel="stylesheet" href="naomis-coffee-club/css/responsive.css">
+<link rel="stylesheet" href="case-study.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="naomis-coffee-club/index.html" class="logo">NAOMI'S<span>COFFEE CLUB</span></a>
+    <nav class="nav-desktop">
+      <a href="naomis-coffee-club/index.html">Site</a>
+      <a href="naomis-coffee-club/menu.html">Menu</a>
+      <a href="case-study.html" aria-current="page">Case Study</a>
+      <a href="https://github.com/AnitaMah/Cafe" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="naomis-coffee-club/index.html">Site</a>
+    <a href="naomis-coffee-club/menu.html">Menu</a>
+    <a href="case-study.html" aria-current="page">Case Study</a>
+    <a href="https://github.com/AnitaMah/Cafe" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <p class="eyebrow">Portfolio · Case Study</p>
+    <h1>Naomi's Coffee Club</h1>
+    <p class="case-disclaimer">Concept/student project — not officially affiliated with the café. Built as a design-and-code portfolio piece.</p>
+    <div class="case-links">
+      <a href="naomis-coffee-club/index.html" class="btn-primary">View live site</a>
+      <a href="https://github.com/AnitaMah/Cafe" target="_blank" rel="noopener" class="btn-secondary">View source on GitHub</a>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <p class="eyebrow">The problem</p>
+    <h2 class="section-title">A café with no home online</h2>
+    <p class="case-copy">Naomi's Coffee Club is a real café in Heilbronn, Germany, with a strong visual identity on Instagram (@naomis.coffeeclub) — moody, warm, brunch-and-espresso energy — but no website or app. Anyone searching for the address, hours, or menu has to dig through Instagram posts and highlights instead of finding it in one place.</p>
+  </section>
+
+  <section class="case-section">
+    <p class="eyebrow">The process</p>
+    <h2 class="section-title">Four stages</h2>
+    <ol class="case-steps">
+      <li>
+        <span class="case-step-title">Brand extraction</span>
+        <span class="case-step-desc">Pulled a color palette, typography direction, tone of voice, and confirmed facts (address, hours, no-reservations policy) directly from the café's Instagram, then wrote it up as a single <code>brand-brief.md</code> used as the reference for every design and content decision after.</span>
+      </li>
+      <li>
+        <span class="case-step-title">Website build</span>
+        <span class="case-step-desc">Static HTML/CSS/JS, mobile-first from the ground up: single breakpoint (<code>min-width: 700px</code>) instead of overlapping desktop-first overrides, a full CSS architecture split by section (<code>css/tokens.css</code>, <code>header.css</code>, <code>hero.css</code>, etc.), an Instagram-style 3-column gallery grid with a lightbox, a real embedded Google Map for the location, and a dedicated menu page — no backend, no build step.</span>
+      </li>
+      <li>
+        <span class="case-step-title">App scaffolding</span>
+        <span class="case-step-desc">A matching Flutter app sharing the exact same color and font tokens as the website, with a bottom nav (Home, Menu, Events, Location, Info), a category <code>TabBar</code> on the Menu screen, and real content pulled from the same source data as the site.</span>
+      </li>
+      <li>
+        <span class="case-step-title">Iteration</span>
+        <span class="case-step-desc">Every round of feedback (mobile layout bugs, button placement, heading hierarchy, font family, menu navigation) was diagnosed, fixed, and pushed as its own reviewable commit rather than one large batch of changes.</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="case-section">
+    <p class="eyebrow">The result</p>
+    <h2 class="section-title">What shipped</h2>
+    <ul class="case-list">
+      <li>A live, responsive website: <a href="https://anitamah.github.io/Cafe/naomis-coffee-club/" target="_blank" rel="noopener">anitamah.github.io/Cafe/naomis-coffee-club</a></li>
+      <li>Full source in one repo: <a href="https://github.com/AnitaMah/Cafe" target="_blank" rel="noopener">github.com/AnitaMah/Cafe</a>
+        <ul class="case-list case-sublist">
+          <li><code>naomis-coffee-club/</code> — the website</li>
+          <li><code>naomis_app/</code> — the Flutter app</li>
+        </ul>
+      </li>
+      <li>A design system (<code>css/tokens.css</code>) that could be reskinned for a different café by editing one file</li>
+      <li>An app skeleton ready to extend with real menu photography once available</li>
+    </ul>
+  </section>
+
+  <section class="case-section">
+    <p class="eyebrow">What's left</p>
+    <h2 class="section-title">Still to do</h2>
+    <ul class="case-list">
+      <li>Real photography for the hero, about, and gallery sections (currently placeholders — sourcing/licensing stock or café-provided photos is the next step)</li>
+      <li>Running the app on a physical device / building a demo APK</li>
+      <li>A short screen-recording walkthrough of both the site and app for sharing</li>
+    </ul>
+  </section>
+
+  <section class="case-section">
+    <p class="eyebrow">Stack</p>
+    <h2 class="section-title">Tools used</h2>
+    <dl class="case-stack">
+      <div class="case-stack-row"><dt>Website</dt><dd>HTML, CSS (custom properties, CSS Grid, no framework), vanilla JS.</dd></div>
+      <div class="case-stack-row"><dt>App</dt><dd>Flutter/Dart, Google Fonts package, <code>url_launcher</code>.</dd></div>
+      <div class="case-stack-row"><dt>Hosting</dt><dd>GitHub Pages.</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-logo">NAOMI'S COFFEE CLUB</p>
+    <p class="footer-address">AB 13, Heilbronn · Café</p>
+    <a href="https://instagram.com/naomis.coffeeclub" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<script src="naomis-coffee-club/script.js"></script>
+</body>
+</html>

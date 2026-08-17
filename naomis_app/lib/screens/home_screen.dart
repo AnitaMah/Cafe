@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
             "plates, proper espresso, and a room that doesn't rush you "
             'out the door. No reservations — just come as you are.',
             style: TextStyle(
-              color: AppColors.cream.withValues(alpha: 0.85),
+              color: AppColors.cream.withOpacity(0.85),
               height: 1.5,
               fontSize: 15,
             ),

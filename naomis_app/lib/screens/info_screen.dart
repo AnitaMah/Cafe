@@ -28,13 +28,13 @@ class InfoScreen extends StatelessWidget {
             "plates, proper espresso, and a room that doesn't rush you "
             'out the door. No reservations — just come as you are.',
             style: TextStyle(
-              color: AppColors.cream.withValues(alpha: 0.85),
+              color: AppColors.cream.withOpacity(0.85),
               height: 1.5,
               fontSize: 15,
             ),
           ),
           const SizedBox(height: 32),
-          Divider(color: AppColors.tan.withValues(alpha: 0.3)),
+          Divider(color: AppColors.tan.withOpacity(0.3)),
           const SizedBox(height: 24),
           Text(
             'HIRING',
@@ -50,7 +50,7 @@ class InfoScreen extends StatelessWidget {
             'Interested in joining the team? Check our Instagram '
             'Highlights for current openings.',
             style: TextStyle(
-              color: AppColors.cream.withValues(alpha: 0.85),
+              color: AppColors.cream.withOpacity(0.85),
               height: 1.5,
               fontSize: 15,
             ),

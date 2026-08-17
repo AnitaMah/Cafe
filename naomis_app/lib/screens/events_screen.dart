@@ -43,7 +43,7 @@ class EventsScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
             color: AppColors.espresso,
-            border: Border.all(color: AppColors.tan.withValues(alpha: 0.3)),
+            border: Border.all(color: AppColors.tan.withOpacity(0.3)),
             borderRadius: BorderRadius.circular(2),
           ),
           child: Column(

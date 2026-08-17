@@ -98,7 +98,7 @@ class AppTheme {
         ),
       ),
       dividerTheme: DividerThemeData(
-        color: AppColors.tan.withValues(alpha: 0.25),
+        color: AppColors.tan.withOpacity(0.25),
         thickness: 1,
       ),
     );

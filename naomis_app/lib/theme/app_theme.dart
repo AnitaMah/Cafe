@@ -18,8 +18,11 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData get theme {
-    final displayFont = GoogleFonts.cormorantGaramond();
-    final bodyFont = GoogleFonts.workSans();
+    // Both display and body use EB Garamond — matches the website's
+    // single-typeface switch in css/tokens.css (was Cormorant Garamond
+    // + Work Sans).
+    final displayFont = GoogleFonts.ebGaramond();
+    final bodyFont = GoogleFonts.ebGaramond();
 
     final base = ThemeData(
       useMaterial3: true,

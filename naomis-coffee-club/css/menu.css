@@ -50,3 +50,23 @@
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+/* Homepage menu preview (full menu now lives on menu.html) */
+.menu-preview-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm) var(--space-md);
+  margin-top: var(--space-lg);
+}
+.menu-preview-categories span {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-body);
+  color: var(--accent);
+}
+.menu-preview-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-lg);
+}

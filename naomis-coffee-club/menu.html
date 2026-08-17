@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Naomi's Coffee Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">NAOMI'S<span>COFFEE CLUB</span></a>
+    <nav class="nav-desktop">
+      <a href="index.html#about">About</a>
+      <a href="menu.html" aria-current="page">Menu</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#visit">Visit</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html#about">About</a>
+    <a href="menu.html" aria-current="page">Menu</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#events">Events</a>
+    <a href="index.html#visit">Visit</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="menu" id="menu" style="padding-top: var(--space-lg);">
+    <p class="eyebrow center">The menu</p>
+    <h2 class="section-title center">What we serve</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-category">
+        <h3>Brunch</h3>
+        <ul>
+          <li><div class="item-name-group"><span class="item-name">Naomi's Brunch Plate</span><span class="item-desc">eggs, avocado, sourdough, seasonal sides</span></div><span class="item-price">€14.50</span></li>
+          <li><div class="item-name-group"><span class="item-name">Crispy Fried Egg, Herb Yogurt & Sourdough</span></div><span class="item-price">€11.00</span></li>
+          <li><div class="item-name-group"><span class="item-name">Granola Bowl</span><span class="item-desc">banana, passionfruit, coconut</span></div><span class="item-price">€9.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Coffee</h3>
+        <ul>
+          <li><div class="item-name-group"><span class="item-name">Espresso</span></div><span class="item-price">€3.00</span></li>
+          <li><div class="item-name-group"><span class="item-name">Flat White</span></div><span class="item-price">€4.20</span></li>
+          <li><div class="item-name-group"><span class="item-name">Espresso Orange</span><span class="item-desc">iced, signature</span></div><span class="item-price">€5.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Bites</h3>
+        <ul>
+          <li><div class="item-name-group"><span class="item-name">Falafel & Hummus Plate</span></div><span class="item-price">€10.00</span></li>
+          <li><div class="item-name-group"><span class="item-name">Sourdough Toast</span><span class="item-desc">whipped feta, honey</span></div><span class="item-price">€8.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Drinks</h3>
+        <ul>
+          <li><div class="item-name-group"><span class="item-name">Iced Matcha Latte</span></div><span class="item-price">€5.00</span></li>
+          <li><div class="item-name-group"><span class="item-name">Fresh Orange & Ginger Juice</span></div><span class="item-price">€5.50</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-category">
+        <h3>Sweets</h3>
+        <ul>
+          <li><div class="item-name-group"><span class="item-name">Daily Bakery Pastry</span></div><span class="item-price">€4.00</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-logo">NAOMI'S COFFEE CLUB</p>
+    <p class="footer-address">AB 13, Heilbronn · Café</p>
+    <a href="https://instagram.com/naomis.coffeeclub" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
